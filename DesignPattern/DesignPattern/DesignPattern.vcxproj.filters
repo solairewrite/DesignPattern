@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\创建型模式">
+      <UniqueIdentifier>{fd263df0-c063-4b1a-88ca-b9c823746a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\创建型模式\AbstractFactory 抽象工厂">
+      <UniqueIdentifier>{e3a2e7ec-5ecb-4a71-89a9-7d05e5903095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\产品">
+      <UniqueIdentifier>{146110e8-a044-4d7d-963d-a219f61a1ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式">
+      <UniqueIdentifier>{29250b6e-a670-4e44-a5a0-34e0ec205c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式\AbstractFactory 抽象工厂">
+      <UniqueIdentifier>{ecbabb65-8d73-4d82-9c8f-a4772ab07306}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>Header Files\创建型模式\AbstractFactory 抽象工厂</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\产品</Filter>
+    </ClInclude>
+    <ClInclude Include="Award.h">
+      <Filter>Header Files\产品</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp">
+      <Filter>Source Files\创建型模式\AbstractFactory 抽象工厂</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
