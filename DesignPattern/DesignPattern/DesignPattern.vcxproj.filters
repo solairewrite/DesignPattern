@@ -24,6 +24,12 @@
     <Filter Include="Source Files\创建型模式\AbstractFactory 抽象工厂">
       <UniqueIdentifier>{ecbabb65-8d73-4d82-9c8f-a4772ab07306}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\创建型模式\Singleton 单例模式">
+      <UniqueIdentifier>{b81f42a5-87ff-4d35-9854-fa1412f860d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式\Singleton 单例模式">
+      <UniqueIdentifier>{e9cfd417-5eff-4667-b991-d4e44dde9d8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -38,6 +44,9 @@
     <ClInclude Include="Demo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files\创建型模式\Singleton 单例模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -48,6 +57,9 @@
     </ClCompile>
     <ClCompile Include="Demo.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Source Files\创建型模式\Singleton 单例模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

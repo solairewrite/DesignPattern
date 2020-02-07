@@ -15,7 +15,6 @@ public:
 
 	virtual EnemyBase* CreateEnemy() const;
 	virtual AwardBase* CreateAward() const;
-
 };
 
 class EnemyFactory_Slime : public EnemyFactoryBase

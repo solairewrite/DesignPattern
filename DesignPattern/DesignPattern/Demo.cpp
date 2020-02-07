@@ -2,6 +2,7 @@
 #include "Demo.h"
 #include "AbstractFactory.h"
 #include "Enemy.h"
+#include "Singleton.h"
 
 using namespace std;
 
@@ -24,4 +25,9 @@ void Demo::CreateProducts(EnemyFactoryBase* inFactory)
 {
 	EnemyBase* Enemy = inFactory->CreateEnemy();
 	AwardBase* Award = inFactory->CreateAward();
+}
+
+void Demo::Demo_Singleton()
+{
+	Singleton::Instance();
 }
