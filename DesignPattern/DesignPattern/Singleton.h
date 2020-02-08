@@ -1,5 +1,6 @@
 // 单例模式
 // 可以有子类
+
 #ifndef SINGLETON
 #define SINGLETON
 

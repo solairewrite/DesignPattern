@@ -30,6 +30,24 @@
     <Filter Include="Source Files\创建型模式\Singleton 单例模式">
       <UniqueIdentifier>{e9cfd417-5eff-4667-b991-d4e44dde9d8f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\创建型模式\Builder 建造者模式">
+      <UniqueIdentifier>{13423fbd-3994-40d0-bc9c-51c71af3c574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式\Builder 建造者模式">
+      <UniqueIdentifier>{6490bd48-d724-4c9a-84e4-1a0b5f784c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\创建型模式\Factory Method 工厂方法">
+      <UniqueIdentifier>{14685f61-83c3-4490-9f2a-3004af349560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式\Factory Method 工厂方法">
+      <UniqueIdentifier>{3e0a6526-5c62-42a2-8f3d-61d3ae04a37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\创建型模式\Prototype 原型模式">
+      <UniqueIdentifier>{6225b408-b3d4-4606-b660-3cfe148b9cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\创建型模式\Prototype 原型模式">
+      <UniqueIdentifier>{4f4430e1-643b-4918-9e0a-521a7311b926}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -47,6 +65,21 @@
     <ClInclude Include="Singleton.h">
       <Filter>Header Files\创建型模式\Singleton 单例模式</Filter>
     </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Header Files\创建型模式\Builder 建造者模式</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyHead.h">
+      <Filter>Header Files\产品</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBody.h">
+      <Filter>Header Files\产品</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod.h">
+      <Filter>Header Files\创建型模式\Factory Method 工厂方法</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype.h">
+      <Filter>Header Files\创建型模式\Prototype 原型模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -60,6 +93,15 @@
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
       <Filter>Source Files\创建型模式\Singleton 单例模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>Source Files\创建型模式\Builder 建造者模式</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod.cpp">
+      <Filter>Source Files\创建型模式\Factory Method 工厂方法</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>Source Files\创建型模式\Prototype 原型模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
