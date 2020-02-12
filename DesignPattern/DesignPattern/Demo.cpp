@@ -6,6 +6,7 @@
 #include "Builder.h"
 #include "FactoryMethod.h"
 #include "Prototype.h"
+#include "Adapter.h"
 
 using namespace std;
 
@@ -64,4 +65,19 @@ void Demo::Demo_Prototype()
 void Demo::Demo_Singleton()
 {
 	Singleton::Instance();
+}
+
+void Demo::Demo_Adapter()
+{
+	// 类适配器
+	Skill_SummonPetDog* tSkill = new Skill_SummonPetDog;
+	tSkill->OnReleaseSkill();
+
+	bool bIsSuccess = tSkill->IsSummonSuccess();
+	cout << "召唤技能释放成功?" << bIsSuccess << endl;
+
+	// 对象适配器
+	cout << endl;
+	Skill_SummonPetCat* tSkill2 = new Skill_SummonPetCat(new AIFactory);
+	tSkill2->OnReleaseSkill();
 }

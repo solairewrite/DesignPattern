@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-	EDesignPattern DesignPatternType = EDesignPattern::EPrototype;
+	EDesignPattern DesignPatternType = EDesignPattern::EAdapter;
 
 	if (DesignPatternType == EDesignPattern::EAbstractFactory)
 		Demo::Demo_AbstractFactory();
@@ -18,5 +18,8 @@ int main(int argc, char* argv[])
 
 	else if (DesignPatternType == EDesignPattern::ESingleton)
 		Demo::Demo_Singleton();
+
+	else if (DesignPatternType == EDesignPattern::EAdapter)
+		Demo::Demo_Adapter();
 
 }

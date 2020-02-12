@@ -48,6 +48,18 @@
     <Filter Include="Source Files\创建型模式\Prototype 原型模式">
       <UniqueIdentifier>{4f4430e1-643b-4918-9e0a-521a7311b926}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\结构型模式">
+      <UniqueIdentifier>{41253f2c-fb8c-4082-8c98-2d51e071ca4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\结构型模式\Adapter 适配器模式">
+      <UniqueIdentifier>{4141d76c-6eb8-4161-9dca-3cca2017fde0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\结构型模式">
+      <UniqueIdentifier>{092dd6fd-596f-45eb-98ba-e71222ed68fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\结构型模式\Adapter 适配器模式">
+      <UniqueIdentifier>{449448a3-67d9-4645-9dd2-bd8718b8da5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -80,6 +92,12 @@
     <ClInclude Include="Prototype.h">
       <Filter>Header Files\创建型模式\Prototype 原型模式</Filter>
     </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>Header Files\结构型模式\Adapter 适配器模式</Filter>
+    </ClInclude>
+    <ClInclude Include="AIFactory.h">
+      <Filter>Header Files\产品</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -102,6 +120,9 @@
     </ClCompile>
     <ClCompile Include="Prototype.cpp">
       <Filter>Source Files\创建型模式\Prototype 原型模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter.cpp">
+      <Filter>Source Files\结构型模式\Adapter 适配器模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
