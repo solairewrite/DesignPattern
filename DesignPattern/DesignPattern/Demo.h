@@ -1,4 +1,4 @@
-#ifndef DEMO
+﻿#ifndef DEMO
 #define DEMO
 
 enum class EDesignPattern

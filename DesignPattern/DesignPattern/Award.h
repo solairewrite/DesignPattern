@@ -1,4 +1,4 @@
-// 创建出的奖励
+﻿// 创建出的奖励
 #ifndef AWARD
 #define AWARD
 

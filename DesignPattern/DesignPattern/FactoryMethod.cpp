@@ -1,4 +1,4 @@
-#include "FactoryMethod.h"
+﻿#include "FactoryMethod.h"
 
 EnemyBase* EnemyCreatorBase::CreateEnemy() const
 {

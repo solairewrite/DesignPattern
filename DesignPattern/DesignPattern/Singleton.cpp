@@ -1,4 +1,4 @@
-#include "Singleton.h"
+﻿#include "Singleton.h"
 
 // 静态变量的初始化
 Singleton* Singleton::_instance = nullptr;
