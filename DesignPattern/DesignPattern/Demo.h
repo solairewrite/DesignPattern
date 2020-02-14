@@ -13,6 +13,8 @@ enum class EDesignPattern
 
 	// 结构型模式
 	EAdapter, // * 适配器模式
+	EBridge, // 桥接模式
+	EComposite, // * 组件模式
 };
 
 class EnemyFactoryBase;
@@ -44,6 +46,12 @@ public:
 
 	// 1,适配器模式
 	static void Demo_Adapter();
+
+	// 2,桥接模式
+	static void Demo_Bridge();
+
+	// 3,组件模式
+	static void Demo_Composite();
 };
 
 #endif

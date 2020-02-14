@@ -7,6 +7,8 @@
 #include "FactoryMethod.h"
 #include "Prototype.h"
 #include "Adapter.h"
+#include "Bridge.h"
+#include "Composite.h"
 
 using namespace std;
 
@@ -80,4 +82,32 @@ void Demo::Demo_Adapter()
 	cout << endl;
 	Skill_SummonPetCat* tSkill2 = new Skill_SummonPetCat(new AIFactory);
 	tSkill2->OnReleaseSkill();
+}
+
+void Demo::Demo_Bridge()
+{
+	Item_Herb* herb = new Item_Herb(new ItemImp_Heal);
+	herb->Use();
+}
+
+void Demo::Demo_Composite()
+{
+	Troop* Ikalos = new SingleSolider("伊卡洛斯");
+	Troop* BeluDandy = new SingleSolider("贝露丹迪");
+	Troop* CC = new SingleSolider("C.C");
+	Troop* Akuya = new SingleSolider("阿库娅");
+	
+	Troop* Goddess = new Troop;
+	Goddess->Add(Ikalos);
+	Goddess->Add(BeluDandy);
+	Goddess->Add(CC);
+	Goddess->Remove(CC);
+	
+	Troop* Army = new Troop;
+	Army->Add(Goddess);
+	Army->Add(Akuya);
+
+	cout << "军团人员: ";
+	Army->PrintNames();
+	cout << endl << "造价: " << Army->GetPrice() << endl;
 }
