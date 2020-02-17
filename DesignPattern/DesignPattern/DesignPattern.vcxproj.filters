@@ -72,6 +72,12 @@
     <Filter Include="Source Files\结构型模式\Composite 组合模式">
       <UniqueIdentifier>{dd74fb7f-7175-44d5-853d-99a0e1a8b453}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\结构型模式\Decorator 装饰器">
+      <UniqueIdentifier>{9981d2cd-fe0d-4b6c-bbbb-a6e8e65d84e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\结构型模式\Decorator 装饰器">
+      <UniqueIdentifier>{b02f35ce-7c1d-452d-85ae-c9973932b2cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -116,6 +122,9 @@
     <ClInclude Include="Composite.h">
       <Filter>Header Files\结构型模式\Composite 组合模式</Filter>
     </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>Header Files\结构型模式\Decorator 装饰器</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -147,6 +156,9 @@
     </ClCompile>
     <ClCompile Include="Composite.cpp">
       <Filter>Source Files\结构型模式\Composite 组合模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator.cpp">
+      <Filter>Source Files\结构型模式\Decorator 装饰器</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

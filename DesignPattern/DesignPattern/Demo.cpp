@@ -9,6 +9,7 @@
 #include "Adapter.h"
 #include "Bridge.h"
 #include "Composite.h"
+#include "Decorator.h"
 
 using namespace std;
 
@@ -96,13 +97,13 @@ void Demo::Demo_Composite()
 	Troop* BeluDandy = new SingleSolider("贝露丹迪");
 	Troop* CC = new SingleSolider("C.C");
 	Troop* Akuya = new SingleSolider("阿库娅");
-	
+
 	Troop* Goddess = new Troop;
 	Goddess->Add(Ikalos);
 	Goddess->Add(BeluDandy);
 	Goddess->Add(CC);
 	Goddess->Remove(CC);
-	
+
 	Troop* Army = new Troop;
 	Army->Add(Goddess);
 	Army->Add(Akuya);
@@ -110,4 +111,11 @@ void Demo::Demo_Composite()
 	cout << "军团人员: ";
 	Army->PrintNames();
 	cout << endl << "造价: " << Army->GetPrice() << endl;
+}
+
+void Demo::Demo_Decorator()
+{
+	// 百夫长拥有大炮和火焰喷射器
+	MachineComp* Centurion = new MachineDecorator(new Cannon(new FlameThrower(nullptr)));
+	Centurion->Fire();
 }
