@@ -78,6 +78,18 @@
     <Filter Include="Source Files\结构型模式\Decorator 装饰器">
       <UniqueIdentifier>{b02f35ce-7c1d-452d-85ae-c9973932b2cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\行为模式">
+      <UniqueIdentifier>{46ea6056-844a-4d31-add1-26f6b03f5760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\行为模式\Observer 观察者模式">
+      <UniqueIdentifier>{7c3235c7-c953-43a3-94bf-4a8f3f1bee65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\行为模式">
+      <UniqueIdentifier>{4c3275a2-e3de-411c-bd6d-6987549ac572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\行为模式\Observer 观察者模式">
+      <UniqueIdentifier>{90b08a6c-5701-4362-9008-40a3f28313b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -125,6 +137,9 @@
     <ClInclude Include="Decorator.h">
       <Filter>Header Files\结构型模式\Decorator 装饰器</Filter>
     </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Header Files\行为模式\Observer 观察者模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -159,6 +174,9 @@
     </ClCompile>
     <ClCompile Include="Decorator.cpp">
       <Filter>Source Files\结构型模式\Decorator 装饰器</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Source Files\行为模式\Observer 观察者模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

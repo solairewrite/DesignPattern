@@ -16,6 +16,9 @@ enum class EDesignPattern
 	EBridge, // 桥接模式
 	EComposite, // * 组件模式
 	EDecorator, // * 装饰模式
+
+	// 行为模式
+	EObserver, // * 观察者模式
 };
 
 class EnemyFactoryBase;
@@ -56,6 +59,11 @@ public:
 
 	// 4,装饰模式
 	static void Demo_Decorator();
+
+	// -------------------- 行为模式 --------------------
+
+	// 7,观察者模式
+	static void Demo_Observer();
 };
 
 #endif

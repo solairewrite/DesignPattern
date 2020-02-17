@@ -10,6 +10,7 @@
 #include "Bridge.h"
 #include "Composite.h"
 #include "Decorator.h"
+#include "Observer.h"
 
 using namespace std;
 
@@ -118,4 +119,15 @@ void Demo::Demo_Decorator()
 	// 百夫长拥有大炮和火焰喷射器
 	MachineComp* Centurion = new MachineDecorator(new Cannon(new FlameThrower(nullptr)));
 	Centurion->Fire();
+}
+
+void Demo::Demo_Observer()
+{
+	Alarm* alarm = new Alarm;
+	Guard* guard = new Guard(alarm);
+	Patroller* patroller = new Patroller(alarm);
+
+	cout << "警报响起,通知观察者" << endl;
+	alarm->SetAlarmState(EAlarmState::EAlarm);
+	alarm->Notify();
 }

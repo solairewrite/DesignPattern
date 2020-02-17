@@ -136,6 +136,7 @@
     <ClInclude Include="EnemyBody.h" />
     <ClInclude Include="EnemyHead.h" />
     <ClInclude Include="FactoryMethod.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="Prototype.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>
@@ -149,6 +150,7 @@
     <ClCompile Include="Demo.cpp" />
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
