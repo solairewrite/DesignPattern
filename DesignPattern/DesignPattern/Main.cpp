@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-	EDesignPattern DesignPatternType = EDesignPattern::EObserver;
+	EDesignPattern DesignPatternType = EDesignPattern::ETemplateMethod;
 
 	if (DesignPatternType == EDesignPattern::EAbstractFactory)
 		Demo::Demo_AbstractFactory();
@@ -33,5 +33,11 @@ int main(int argc, char* argv[])
 
 	else if (DesignPatternType == EDesignPattern::EObserver)
 		Demo::Demo_Observer();
+
+	else if (DesignPatternType == EDesignPattern::EStrategy)
+		Demo::Demo_Stratedy();
+
+	else if (DesignPatternType == EDesignPattern::ETemplateMethod)
+		Demo::Demo_Template_Method();
 
 }

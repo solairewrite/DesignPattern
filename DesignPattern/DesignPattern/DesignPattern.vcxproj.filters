@@ -90,6 +90,18 @@
     <Filter Include="Source Files\行为模式\Observer 观察者模式">
       <UniqueIdentifier>{90b08a6c-5701-4362-9008-40a3f28313b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\行为模式\Strategy 策略模式">
+      <UniqueIdentifier>{9c267011-fe65-409c-bb0a-2242574628ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\行为模式\Strategy 策略模式">
+      <UniqueIdentifier>{6137d4f2-055f-4d6b-bde8-9bc0c9924c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\行为模式\Template Method 模板方法">
+      <UniqueIdentifier>{16a491ac-63ee-4958-8cdf-8a72b3ba26e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\行为模式\Template Method 模板方法">
+      <UniqueIdentifier>{f313636d-4c43-4011-af16-675cc5cffc15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -140,6 +152,12 @@
     <ClInclude Include="Observer.h">
       <Filter>Header Files\行为模式\Observer 观察者模式</Filter>
     </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>Header Files\行为模式\Strategy 策略模式</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateMethod.h">
+      <Filter>Header Files\行为模式\Template Method 模板方法</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -177,6 +195,12 @@
     </ClCompile>
     <ClCompile Include="Observer.cpp">
       <Filter>Source Files\行为模式\Observer 观察者模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>Source Files\行为模式\Strategy 策略模式</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateMethod.cpp">
+      <Filter>Source Files\行为模式\Template Method 模板方法</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

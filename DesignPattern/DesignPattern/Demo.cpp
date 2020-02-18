@@ -11,6 +11,8 @@
 #include "Composite.h"
 #include "Decorator.h"
 #include "Observer.h"
+#include "Strategy.h"
+#include "TemplateMethod.h"
 
 using namespace std;
 
@@ -130,4 +132,24 @@ void Demo::Demo_Observer()
 	cout << "警报响起,通知观察者" << endl;
 	alarm->SetAlarmState(EAlarmState::EAlarm);
 	alarm->Notify();
+}
+
+void Demo::Demo_Stratedy()
+{
+	Travel* trip1 = new Travel(new TravelMethod_Walk);
+	trip1->GotoDestination();
+
+	Travel* trip2 = new Travel(new TravelMethod_Car);
+	trip2->GotoDestination();
+}
+
+void Demo::Demo_Template_Method()
+{
+	ThrowWeapon_Grenade* grenade = new ThrowWeapon_Grenade;
+	grenade->Init();
+
+	cout << endl;
+
+	ThrowWeapon_SmokeBomb* smokeBome = new ThrowWeapon_SmokeBomb;
+	smokeBome->Init();
 }

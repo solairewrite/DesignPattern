@@ -1,7 +1,7 @@
 ﻿#ifndef DEMO
 #define DEMO
 
-// 设计模式枚举,常用模式标记为 *
+// 设计模式枚举,8个常用模式标记为 *
 enum class EDesignPattern
 {
 	// 创建型模式
@@ -19,6 +19,8 @@ enum class EDesignPattern
 
 	// 行为模式
 	EObserver, // * 观察者模式
+	EStrategy, // * 策略模式
+	ETemplateMethod, // * 模板方法
 };
 
 class EnemyFactoryBase;
@@ -64,6 +66,12 @@ public:
 
 	// 7,观察者模式
 	static void Demo_Observer();
+
+	// 9,策略模式
+	static void Demo_Stratedy();
+
+	// 10,模板方法
+	static void Demo_Template_Method();
 };
 
 #endif
